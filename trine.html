@@ -1,0 +1,544 @@
+<!---------------------------------------------------------- 
+ -  ARTIKELSIDE (Digital Krimi) 
+ ---------------------------------------------------------->
+
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <!-- Digital Krimi artikel-side -->
+
+    <!-- Grundlæggende meta og ressourcer -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Digital Krimi – Nyheder om digital svindel og sikkerhed</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/favicon.png">
+
+    <!-- Google Fonts: Poppins (overskrifter) og IBM Plex Sans (brødtekst) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&family=Poppins:wght@500;600&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Ikoner til burgermenu og sociale medier -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="anonymous"
+        crossorigin="anonymous"
+    >
+
+    <!-- Egen CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Javascript til burgermenu (fra undervisningen) -->
+    <script src="js/navigation.js" defer></script>
+</head>
+
+<body>
+    <!-- Skip-link til tastaturbrugere -->
+    <a href="#main-content" class="skip-link">
+        Spring hovednavigation over
+    </a>
+
+    <!-- ======================================================
+         Header: logo, service-menu, hovedmenu og burgermenu
+    ======================================================= -->
+    <header class="site-header">
+        <div class="site-header__top">
+            <!-- Logo-link til forsiden -->
+            <a href="index.html" class="site-header__brand" aria-label="Gå til forsiden">
+                <img
+                    src="img/logo.png"
+                    alt="Digital Krimi"
+                >
+            </a>
+
+            <!-- Service-menu med overordnede links -->
+            <nav class="service-nav" aria-label="Service menu">
+                <ul class="service-nav__list">
+                    <li class="service-nav__item">
+                        <a href="#" class="service-nav__link">En del af SikkerDigital.dk</a>
+                    </li>
+                    <li class="service-nav__item">
+                        <a href="#" class="service-nav__link">Hotline</a>
+                    </li>
+                    <li class="service-nav__item">
+                        <a href="kontakt.html" class="service-nav__link">Kontakt</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Burgermenu-knap til mobil -->
+            <!-- id="bars" bruges af navigation.js til at styre menuen -->
+            <button
+                id="bars"
+                class="menu-toggle"
+                type="button"
+                aria-label="Åbn hovedmenuen"
+                aria-controls="main-navigation"
+            >
+                <span class="visually-hidden">Menu</span>
+                <i class="fa-solid fa-bars" aria-hidden="true"></i>
+            </button>
+        </div>
+
+        <!-- Hovednavigation (nyhedsside-menu) -->
+        <nav
+            class="main-nav"
+            aria-label="Hovedmenu"
+        >
+            <ul class="main-nav__list">
+                <li class="main-nav__item visually-hidden">
+                    <a href="index.html">Forside</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="#" class="main-nav__link">Seneste sager</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="#" class="main-nav__link">Gode råd</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="#" class="main-nav__link">Video</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="#" class="main-nav__link">Tip os</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ======================================================
+         Sidens indhold: top-story, seneste sager, video, guides
+    ======================================================= -->
+    <main id="main-content" class="page-main"> <!-- Bruger ID som anker til skiplink for skærmlæsere -->
+
+    <!-- Artikel: Trines historie -->
+    <article class="story-article">
+        <p class="pre-heading">Brugerhistorie</p>
+
+        <h1 class="heading story-article__title">
+            Tyv pelsede Trine for 30.000 kr. — men så gjorde hun noget uventet
+        </h1>
+
+    <p class="story-article__manchet">
+        En tirsdag morgen blev Trine fra Korsør ringet op af en falsk bankrådgiver
+        og var millimeter fra at miste hele sin opsparing. Men en lille detalje fik hende
+        til at stoppe op, og så tog opkaldet en uventet drejning.
+    </p>
+
+        <figure class="story-article__figure">
+            <img
+                src="img/trine.jpg"
+                alt="Billede af Trine der ser lettet, men stadig påvirket, ud efter telefonsamtalen"
+                class="story-article__image"
+            >
+            <figcaption class="story-article__caption">
+                Svindlerens telefonopkald lød så professionelt, at Trine et øjeblik troede,
+                hun talte med sin rigtige bank. Foto: Privatfoto
+            </figcaption>
+        </figure>
+
+        <p class="story-article__meta">
+            <time datetime="2025-11-20">20. november</time>
+            <span aria-hidden="true"> · </span>
+            <span>Af Lene Birk</span>
+        </p>
+
+        <div class="story-article__body">
+            <p>Det kunne være endt i katastrofe.</p>
+            <p>Det kunne have kostet hende ALT.</p>
+            <p>Men Trine fra Korsør gjorde noget, som de fleste ikke tør:</p>
+            <p>Hun tog kampen op mod en digital svindler ... og vandt.</p>
+
+            <h2 class="article-subheading">
+                “Han lød så overbevisende… jeg blev helt lammet”
+            </h2>
+
+            <p>
+                En helt almindelig tirsdag morgen lød telefonen. Trine stod stadig i morgenkåbe
+                med håret strittende i alle retninger, da en myndig stemme skar igennem:
+            </p>
+            <p>“Der er mistænkelige overførsler fra din konto.”</p>
+            <p>
+                Stemmen var rolig, næsten venlig, men presset lå og dirrede lige under overfladen.
+                Trine fortæller, at hun blev fanget mellem angst og høflighed. For hvad gør man,
+                når nogen siger, at ens penge er ved at forsvinde?
+            </p>
+            <p>
+                “Han lød så professionel,” siger hun. “Og han kendte mit navn. Mit fulde navn!
+                Det løb mig koldt ned ad rykken. Hvor havde han det fra?! Det undrer mig stadig.”
+            </p>
+
+            <h2 class="article-subheading">
+                “Tryk her, så sikrer vi dine midler”
+            </h2>
+
+            <p>
+                Efter få minutter blev han mere bestemt. Hvis Trine ikke gjorde, som han sagde,
+                ville hendes konto være tømt “inden for fem minutter”.
+            </p>
+            <p>
+                Man kan sige meget om Trine, men hun er ikke en, der vil stå tilbage som offer.
+                Så da manden i røret bad hende logge ind via et link, han sendte – et link,
+                der lignede bankens hjemmeside ned til mindste detalje – begyndte hun instinktivt
+                at bremse op.
+            </p>
+            <p>
+                “Jeg lagde mærke til én ting,” fortæller hun og løfter pegefingeren.
+                “Han begyndte at tale hurtigere og hurtigere. Som om jeg var en tidsindstillet bombe.”
+            </p>
+            <p>Og det var der, hun mærkede det første lille stik af mistanke.</p>
+
+            <h2 class="article-subheading">
+                Det afgørende øjeblik
+            </h2>
+
+            <p>
+                Trine fortæller, at hun pludselig kom i tanke om noget, hun engang havde læst på Digital Krimi:
+            </p>
+            <p><em>“En rigtig bank ringer aldrig og beder om, at du logger ind via et link.”</em></p>
+            <p>
+                Så Trine besluttede sig for at skifte roller. Hun skulle ikke være offeret…
+                hun skulle være detektiv!
+            </p>
+            <p>
+                “Jeg sagde til ham: ‘Hvis du virkelig er fra banken, så kan du fortælle mig
+                de sidste fire cifre i min konto. Det plejer I altid at gøre.’”
+            </p>
+            <p>
+                Der blev stille. Meget stille. Og så kom det: en kort, utålmodig hosten og et svar,
+                der fik det hele til at falde på plads.
+            </p>
+            <p>
+                “Det har jeg ikke adgang til. Jeg skal bede dig om at gøre som jeg siger,
+                ellers kan vi ikke få dine penge igen.”
+            </p>
+            <p>
+                Trine lagde på. Hun kalder det selv for sit “James Bond-øjeblik”, men indrømmer
+                med et grin, at hendes hænder rystede så meget, at hun måtte bruge begge
+                for at trykke på afslut-opkald-knappen.
+            </p>
+
+            <h2 class="article-subheading">
+                Ikke noget at bekymre sig om
+            </h2>
+
+            <p>
+                Efter hun havde lagt på, ringede hun selv til banken. Den rigtige bank.
+                De kunne straks bekræfte, at der intet var galt med hendes konto.
+                Ingen mistænkelig aktivitet, ingen advarsler, ingen opkald.
+            </p>
+            <p>
+                Trine var både lettet og rasende.
+            </p>
+            <p>
+                “Han havde nær fået mig!” fortæller hun. “Jeg var bogstaveligt talt ét klik
+                fra at afgive mine oplysninger.”
+            </p>
+            <p>
+                Men i stedet for at være flov, valgte Trine at gøre noget usædvanligt.
+            </p>
+            <p>
+                Hun skrev et opslag i den lokale Facebook-gruppe, hvor hun detaljeret fortalte
+                om hele episoden, sprogtonen, presset, linket. Alt.
+            </p>
+            <p>
+                Opslaget eksploderede. På få timer fik det hundredvis af reaktioner,
+                og kommentarerne væltede ind:
+            </p>
+            <p>“Det der ringede de også til min mor om!”</p>
+            <p>“Tak Trine, jeg viste min far dit opslag!”</p>
+            <p>“Der var de også efter mig i sidste uge!”</p>
+            <p>
+                Det var der, Trine indså noget: Hun havde ikke bare undgået at blive snydt.
+                Hun havde snøret svindleren, afbrudt hans plan, og samtidig hjulpet
+                hundredvis af andre med at spotte samme trick.
+            </p>
+
+            <h2 class="article-subheading">
+                “Han kommer ikke igen!”
+            </h2>
+
+            <p>
+                Når Trine fortæller historien i dag, er det med ryggen rank og en gnist i øjnene.
+            </p>
+            <p>
+                “Jeg blev ikke snydt,” siger hun. “Han troede, han havde fat i en dum gås,
+                men jeg kan love dig. Han kommer ikke igen.”
+            </p>
+            <p>
+                Og så siger hun noget, der hænger i luften:
+            </p>
+            <p>
+                “Hvis jeg var så tæt på at falde for det, så kan hvem som helst.
+                Og det er derfor, vi skal tale om det. Ikke være flove over det.”
+            </p>
+            <p>
+                Det er lige præcis den slags historier, der gør en forskel.
+            </p>
+            <p>
+                For digital svindel stopper kun, når vi deler vores oplevelser. Ikke når vi gemmer dem væk.
+            </p>
+        </div>
+    </article>
+
+    <!-- Infoboks med gode råd -->
+    <aside class="article-infobox" aria-labelledby="article-tips-heading">
+        <p class="pre-heading">Det gode råd</p>
+        <h2 id="article-tips-heading" class="heading">
+            Sådan undgår du selv at blive snydt
+        </h2>
+
+        <ol class="article-infobox__list">
+            <li>
+                <h3 class="article-infobox__subheading">
+                    1) Læg altid på og ring selv til banken
+                </h3>
+                <p>
+                    Svindlere lever af at lyde troværdige i telefonen, men din bank vil aldrig blive
+                    fornærmet over, at du lægger på og selv ringer tilbage. Brug bankens officielle
+                    nummer fra hjemmesiden — ikke det, der dukkede op på din telefon. På den måde ved
+                    du med sikkerhed, hvem du taler med.
+                </p>
+            </li>
+            <li>
+                <h3 class="article-infobox__subheading">
+                    2) Klik aldrig på links i SMS’er eller beskeder
+                </h3>
+                <p>
+                    Hver eneste svindelmetode starter med et link, der ligner din banks hjemmeside.
+                    Men banker sender aldrig log-ind-links. Gå altid selv ind i din netbank-app
+                    eller browser. Hvis der er noget galt med din konto, ligger beskeden allerede dér
+                    — ikke i en SMS.
+                </p>
+            </li>
+            <li>
+                <h3 class="article-infobox__subheading">
+                    3) Fald ikke for tidspres (det er svindlerens stærkeste våben)
+                </h3>
+                <p>
+                    Rigtige bankrådgivere taler roligt og neutralt. En svindler derimod skaber panik:
+                    “nu!”, “straks!”, “ellers er pengene væk”. Hvis du mærker presset, er det næsten
+                    altid svindel. Tag en dyb indånding, stop samtalen, og tjek situationen i fred og ro.
+                </p>
+            </li>
+        </ol>
+    </aside>
+
+    <!-- Sektion: Gode råd (genbrugt fra forside) -->
+    <section class="guide-section">
+        <p class="pre-heading">Flere gode råd</p>
+
+        <h2 class="heading">
+            Få hjælp til at beskytte dig
+        </h2>
+
+        <div class="guides-grid">
+            <article class="guide-card">
+                <a href="#" class="guide-card__link">
+                    <h3 class="heading">
+                        Er dit CPR-nummer faldet i de forkerte hænder?
+                    </h3>
+                    <p>
+                        Lær, hvad du skal gøre, hvis du mistænker identitetstyveri,
+                        og hvordan du begrænser skaden hurtigst muligt.
+                    </p>
+                </a>
+                <a href="#" class="btn-primary guide-card__button">
+                    Læs mere
+                </a>
+            </article>
+
+            <article class="guide-card">
+                <a href="#" class="guide-card__link">
+                    <h3 class="heading">
+                        Sådan tjekker du om en webshop er ægte, før du handler
+                    </h3>
+                    <p>
+                        En tjekliste til julehandlen: domæne, kontaktoplysninger,
+                        betalingsmuligheder og anmeldelser.
+                    </p>
+                </a>
+                <a href="#" class="btn-primary guide-card__button">
+                    Læs mere
+                </a>
+            </article>
+
+            <article class="guide-card">
+                <a href="#" class="guide-card__link">
+                    <h3 class="heading">
+                        Værktøj til bedre beskyttelse af virksomhedens data
+                    </h3>
+                    <p>
+                        Få overblik over de mest kritiske systemer og konkrete anbefalinger
+                        til små og mellemstore virksomheder.
+                    </p>
+                </a>
+                <a href="#" class="btn-primary guide-card__button">
+                    Læs mere
+                </a>
+            </article>
+        </div>
+    </section>
+
+    <!-- Sektion: Seneste sager (tre mindre cards med billeder) -->
+    <section class="latest-stories latest-stories--related">
+        <p class="pre-heading">Seneste sager</p>
+
+        <h2 class="heading">
+            Mere om digital svindel
+        </h2>
+
+        <div class="stories-grid stories-grid--related">
+            <!-- Card: Falske webshops -->
+            <article class="story-card story-card--small">
+                <a href="#" class="story-card__link">
+                    <figure class="story-card__media">
+                        <img
+                            src="img/udsalg.jpg"
+                            alt="Billede af butik med udsalg"
+                        >
+                    </figure>
+
+                    <div class="story-card__content">
+                        <p class="story-card__category badge badge--lime">
+                            Aktuelt svindeltrick
+                        </p>
+
+                        <h3 class="heading">
+                            Falske webshops lokker med udsalg på populære mærker
+                        </h3>
+
+                        <p class="story-card__meta">
+                            16. november 2025
+                        </p>
+                    </div>
+                </a>
+            </article>
+
+            <!-- Card: Julie og Mathilde -->
+            <article class="story-card story-card--small">
+                <a href="#" class="story-card__link">
+                    <figure class="story-card__media">
+                        <img
+                            src="img/2-kvinder.jpg"
+                            alt="Billede af to kvinder der går bekymret på gaden"
+                        >
+                    </figure>
+
+                    <div class="story-card__content">
+                        <p class="story-card__category badge badge--magenta">
+                            Brugerhistorie
+                        </p>
+
+                        <h3 class="heading">
+                            Julie og Mathilde blev snydt af falsk udlejer. Sådan skete det
+                        </h3>
+
+                        <p class="story-card__meta">
+                            12. november 2025
+                        </p>
+                    </div>
+                </a>
+            </article>
+
+            <!-- Card: Kommuner advarer -->
+            <article class="story-card story-card--small">
+                <a href="#" class="story-card__link">
+                    <figure class="story-card__media">
+                        <img
+                            src="img/kvinde-telefon.jpg"
+                            alt="Billede af en kvinde der taler i telefon"
+                        >
+                    </figure>
+
+                    <div class="story-card__content">
+                        <p class="story-card__category badge badge--petroleum">
+                            Kort nyt
+                        </p>
+
+                        <h3 class="heading">
+                            Kommuner advarer om falske NemID- og MitID-opkald
+                        </h3>
+
+                        <p class="story-card__meta">
+                            11. november 2025
+                        </p>
+                    </div>
+                </a>
+            </article>
+        </div>
+    </section>
+</main>
+
+<!-- ======================================================
+         Footer: branding, “det med småt”, sociale links
+    ======================================================= -->
+    <footer class="site-footer">
+        <div class="site-footer__inner">
+            <!-- Branding og kort beskrivelse -->
+            <section class="footer-brand" aria-label="Om Digital Krimi">
+                <img
+                    src="img/logo.png"
+                    alt="Digital Krimi – en del af SikkerDigital.dk"
+                    class="footer-brand__logo"
+                >
+
+                <p class="footer-brand__text">
+                    Vi hjælper dig med at forstå og undgå at blive udsat for digital svindel
+                    ved at udgive spændende og lærerige krimi-artikler fra virkelighedens verden.
+                </p>
+            </section>
+
+            <!-- “Det med småt”-links -->
+            <nav class="footer-nav" aria-label="Links til det med småt">
+                <ul class="footer-nav__list">
+                    <li class="footer-nav__item">
+                        <a href="#" class="footer-nav__link">Tilgængelighedserklæring</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a href="#" class="footer-nav__link">Cookies</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a href="#" class="footer-nav__link">Privatlivspolitik</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Sociale links -->
+            <section class="footer-social" aria-label="Digital Krimi på sociale medier">
+                <h2 class="pre-heading footer-social__heading">Følg Digital Krimi</h2>
+                <ul class="footer-social__list">
+                    <li class="footer-social__item">
+                        <a href="#" class="footer-social__link">
+                            <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                            <span class="visually-hidden">Digital Krimi på Facebook</span>
+                        </a>
+                    </li>
+                    <li class="footer-social__item">
+                        <a href="#" class="footer-social__link">
+                            <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+                            <span class="visually-hidden">Digital Krimi på LinkedIn</span>
+                        </a>
+                    </li>
+                    <li class="footer-social__item">
+                        <a href="#" class="footer-social__link">
+                            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                            <span class="visually-hidden">Digital Krimi på Instagram</span>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </footer>
+
+</body>
+</html>
+
+
+

@@ -1,0 +1,334 @@
+<!---------------------------------------------------------- 
+ -  KONTAKTSIDE (Digital Krimi) 
+ ---------------------------------------------------------->
+
+ <!DOCTYPE html>
+<html lang="da">
+<head>
+
+    <!-- Grundlæggende meta og ressourcer -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Digital Krimi – Nyheder om digital svindel og sikkerhed</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/favicon.png">
+
+    <!-- Google Fonts: Poppins (overskrifter) og IBM Plex Sans (brødtekst) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&family=Poppins:wght@500;600&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Ikoner til burgermenu og sociale medier -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="anonymous"
+        crossorigin="anonymous"
+    >
+
+    <!-- Egen CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Javascript til burgermenu (fra undervisningen) -->
+    <script src="js/navigation.js" defer></script>
+</head>
+
+<body>
+    <!-- Skip-link til tastaturbrugere -->
+    <a href="#main-content" class="skip-link">
+        Spring hovednavigation over
+    </a>
+
+    <!-- ======================================================
+         Header: logo, service-menu, hovedmenu og burgermenu
+    ======================================================= -->
+    <header class="site-header">
+        <div class="site-header__top">
+            <!-- Logo-link til forsiden -->
+            <a href="index.html" class="site-header__brand" aria-label="Gå til forsiden">
+                <img
+                    src="img/logo.png"
+                    alt="Digital Krimi"
+                >
+            </a>
+
+            <!-- Service-menu med overordnede links -->
+            <nav class="service-nav" aria-label="Service menu">
+                <ul class="service-nav__list">
+                    <li class="service-nav__item">
+                        <a href="#" class="service-nav__link">En del af SikkerDigital.dk</a>
+                    </li>
+                    <li class="service-nav__item">
+                        <a href="#" class="service-nav__link">Hotline</a>
+                    </li>
+                    <li class="service-nav__item">
+                        <a href="kontakt.html" class="service-nav__link" aria-current="page">Kontakt</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Burgermenu-knap til mobil -->
+            <!-- id="bars" bruges af navigation.js til at styre menuen -->
+            <button
+                id="bars"
+                class="menu-toggle"
+                type="button"
+                aria-label="Åbn hovedmenuen"
+                aria-controls="main-navigation"
+            >
+                <span class="visually-hidden">Menu</span>
+                <i class="fa-solid fa-bars" aria-hidden="true"></i>
+            </button>
+        </div>
+
+        <!-- Hovednavigation (nyhedsside-menu) -->
+        <nav
+            class="main-nav"
+            aria-label="Hovedmenu"
+        >
+            <ul class="main-nav__list">
+                <li class="main-nav__item visually-hidden">
+                    <a href="index.html">Forside</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="#" class="main-nav__link">Seneste sager</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="#" class="main-nav__link">Gode råd</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="#" class="main-nav__link">Video</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="#" class="main-nav__link">Tip os</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content" class="page-main contact-page">
+
+    <section class="contact-intro">
+        <h1 class="heading">Kontakt os</h1>
+
+        <p>
+            Digital Krimi er et nyhedssite tilhørende Sikkerdigital.dk, som er
+            redigeret af Styrelsen for Samfundssikkerhed.
+        </p>
+
+        <address class="contact-address">
+            <p>Styrelsen for Samfundssikkerhed</p>
+            <p>Datavej 20, 3460 Birkerød</p>
+            <p>
+                E-mail:
+                <a href="mailto:samsik@samsik.dk">samsik@samsik.dk</a>
+            </p>
+            <p>
+                Telefon:
+                <a href="tel:+4545161666">+45 45 16 16 66</a>
+            </p>
+        </address>
+
+        <p>
+            Har du spørgsmål eller feedback til Digital Krimis redaktionelle indhold
+            kan du skrive til:
+            <a href="mailto:digitalkrimi@samsik.dk">digitalkrimi@samsik.dk</a>
+            eller via kontaktformularen på denne side.
+        </p>
+
+        <p>
+            Drejer din henvendelse sig om digital svindel eller cyberangreb, henviser vi
+            til Cyberhotline for digital sikkerhed på tlf.
+            <a href="tel:+4533370037">3337 0037</a>.
+        </p>
+    </section>
+
+    <section class="contact-form-section">
+
+        <div class="contact-form-card">
+            <h2 class="heading">Skriv til os</h2>
+
+            <form
+                class="contact-form"
+                action="#"
+                method="post"
+            >
+                <p class="contact-form__info">
+                    Felter markeret med * er obligatoriske.
+                </p>
+
+                <!-- Fulde navn -->
+                <div class="form-field">
+                    <label for="full-name">
+                        Fulde navn<span class="form-field__required">*</span>
+                    </label>
+                    <input
+                        type="text"
+                        id="full-name"
+                        name="full-name"
+                        autocomplete="name"
+                        required
+                    >
+                    <p class="form-hint">
+                        Skriv dit fulde navn.
+                    </p>
+                    <p class="error-message">
+                        Udfyld venligst dit fulde navn.
+                    </p>
+                </div>
+
+                <!-- E-mail -->
+                <div class="form-field">
+                    <label for="email">
+                        E-mail<span class="form-field__required">*</span>
+                    </label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        autocomplete="email"
+                        required
+                    >
+                    <p class="form-hint">
+                        Skriv din e-mailadresse i formatet navn@domæne.dk.
+                    </p>
+                    <p class="error-message">
+                        Indtast en gyldig e-mailadresse.
+                    </p>
+                </div>
+
+                <!-- Bekræft e-mail -->
+                <div class="form-field">
+                    <label for="email-confirm">
+                        Bekræft e-mail<span class="form-field__required">*</span>
+                    </label>
+                    <input
+                        type="email"
+                        id="email-confirm"
+                        name="email-confirm"
+                        autocomplete="off"
+                        required
+                    >
+                    <p class="form-hint">
+                        Skriv den samme e-mailadresse som ovenfor.
+                    </p>
+                    <p class="error-message">
+                        Bekræft venligst din e-mailadresse.
+                    </p>
+                </div>
+
+                <!-- Telefon (valgfri) -->
+                <div class="form-field">
+                    <label for="phone">
+                        Telefon (valgfri)
+                    </label>
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        autocomplete="tel"
+                    >
+                    <p class="form-hint">
+                        Valgfrit, men kan gøre det nemmere og hurtigere for os at kontakte dig.
+                    </p>
+                </div>
+
+                <!-- Besked -->
+                <div class="form-field">
+                    <label for="message">
+                        Besked<span class="form-field__required">*</span>
+                    </label>
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="6"
+                        required
+                    ></textarea>
+                    <p class="form-hint">
+                        Skriv kort, hvad din henvendelse drejer sig om. Del ikke CPR-nummer eller andre følsomme oplysninger.
+                    </p>
+                    <p class="error-message">
+                        Skriv venligst en besked.
+                    </p>
+                </div>
+
+                <button type="submit" class="btn-primary contact-form__submit">
+                    Send
+                </button>
+            </form>
+        </div>
+    </section>
+
+</main>
+
+
+<!-- ======================================================
+         Footer: branding, “det med småt”, sociale links
+    ======================================================= -->
+    <footer class="site-footer">
+        <div class="site-footer__inner">
+            <!-- Branding og kort beskrivelse -->
+            <section class="footer-brand" aria-label="Om Digital Krimi">
+                <img
+                    src="img/logo.png"
+                    alt="Digital Krimi – en del af SikkerDigital.dk"
+                    class="footer-brand__logo"
+                >
+
+                <p class="footer-brand__text">
+                    Vi hjælper dig med at forstå og undgå at blive udsat for digital svindel
+                    ved at udgive spændende og lærerige krimi-artikler fra virkelighedens verden.
+                </p>
+            </section>
+
+            <!-- “Det med småt”-links -->
+            <nav class="footer-nav" aria-label="Links til det med småt">
+                <ul class="footer-nav__list">
+                    <li class="footer-nav__item">
+                        <a href="#" class="footer-nav__link">Tilgængelighedserklæring</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a href="#" class="footer-nav__link">Cookies</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a href="#" class="footer-nav__link">Privatlivspolitik</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Sociale links -->
+            <section class="footer-social" aria-label="Digital Krimi på sociale medier">
+                <h2 class="pre-heading footer-social__heading">Følg Digital Krimi</h2>
+                <ul class="footer-social__list">
+                    <li class="footer-social__item">
+                        <a href="#" class="footer-social__link">
+                            <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                            <span class="visually-hidden">Digital Krimi på Facebook</span>
+                        </a>
+                    </li>
+                    <li class="footer-social__item">
+                        <a href="#" class="footer-social__link">
+                            <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+                            <span class="visually-hidden">Digital Krimi på LinkedIn</span>
+                        </a>
+                    </li>
+                    <li class="footer-social__item">
+                        <a href="#" class="footer-social__link">
+                            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                            <span class="visually-hidden">Digital Krimi på Instagram</span>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </footer>
+
+</body>
+</html>
+
+

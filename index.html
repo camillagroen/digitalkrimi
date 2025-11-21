@@ -1,0 +1,612 @@
+<!---------------------------------------------------------- 
+ -  FORSIDE (Digital Krimi) 
+ ---------------------------------------------------------->
+
+<!DOCTYPE html>
+<html lang="da">
+<head>
+
+    <!-- Grundlæggende meta og ressourcer -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Digital Krimi – Nyheder om digital svindel og sikkerhed</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/favicon.png">
+
+    <!-- Google Fonts: Poppins (overskrifter) og IBM Plex Sans (brødtekst) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&family=Poppins:wght@500;600&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Ikoner til burgermenu og sociale medier -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="anonymous"
+        crossorigin="anonymous"
+    >
+
+    <!-- Egen CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Javascript til burgermenu (fra undervisningen) -->
+    <script src="js/navigation.js" defer></script>
+</head>
+
+<body>
+    <!-- Skip-link til tastaturbrugere -->
+    <a href="#main-content" class="skip-link">
+        Spring hovednavigation over
+    </a>
+
+    <!-- ======================================================
+         Header: logo, service-menu, hovedmenu og burgermenu
+    ======================================================= -->
+    <header class="site-header">
+        <div class="site-header__top">
+            <!-- Logo-link til forsiden -->
+            <a href="index.html" class="site-header__brand" aria-label="Gå til forsiden">
+                <img
+                    src="img/logo.png"
+                    alt="Digital Krimi"
+                >
+            </a>
+
+            <!-- Service-menu med overordnede links -->
+            <nav class="service-nav" aria-label="Service menu">
+                <ul class="service-nav__list">
+                    <li class="service-nav__item">
+                        <a href="#" class="service-nav__link">En del af SikkerDigital.dk</a>
+                    </li>
+                    <li class="service-nav__item">
+                        <a href="#" class="service-nav__link">Hotline</a>
+                    </li>
+                    <li class="service-nav__item">
+                        <a href="kontakt.html" class="service-nav__link">Kontakt</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Burgermenu-knap til mobil -->
+            <!-- id="bars" bruges af navigation.js til at styre menuen -->
+            <button
+                id="bars"
+                class="menu-toggle"
+                type="button"
+                aria-label="Åbn hovedmenuen"
+                aria-controls="main-navigation"
+            >
+                <span class="visually-hidden">Menu</span>
+                <i class="fa-solid fa-bars" aria-hidden="true"></i>
+            </button>
+        </div>
+
+        <!-- Hovednavigation (nyhedsside-menu) -->
+        <nav
+            class="main-nav"
+            aria-label="Hovedmenu"
+        >
+            <ul class="main-nav__list">
+                <li class="main-nav__item visually-hidden">
+                    <a href="index.html" aria-current="page">Forside</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="#" class="main-nav__link">Seneste sager</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="#" class="main-nav__link">Gode råd</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="#" class="main-nav__link">Video</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="#" class="main-nav__link">Tip os</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ======================================================
+         Sidens indhold: top-story, seneste sager, video, guides
+    ======================================================= -->
+    <main id="main-content" class="page-main"> <!-- Bruger ID som anker til skiplink for skærmlæsere -->
+
+        <!-- 1. Hovedhistorie / hero -->
+        <article class="lead-story">
+            <a href="trine.html" class="lead-story__link">
+                <div class="lead-story__grid">
+                    <figure class="lead-story__media">
+                        <img
+                            src="img/trine.jpg"
+                            alt="Billede af en stolt Trine der fortæller, hvordan hun undgik at blive snydt af en digital tyv"
+                        >
+                    </figure>
+
+                    <div class="lead-story__content">
+                        <p class="pre-heading">Tophistorie</p>
+
+                        <h1 class="heading">
+                            Sådan snød Trine digital tyv: "Han kommer ikke igen!"
+                        </h1>
+
+                        <p class="lead-story__intro">
+                            En tirsdag morgen blev Trine fra Korsør ringet op af en falsk bankrådgiver og var millimeter fra at miste hele sin opsparing. Men en lille detalje fik hende til at stoppe op, og så tog opkaldet en uventet drejning.
+                        </p>
+
+                        <p class="lead-story__meta">
+                            <time datetime="2025-11-20">20. november 2025</time>
+                        </p>
+                    </div>
+                </div>
+            </a>
+        </article>
+
+        <!-- 2. Seneste sager -->
+        <section class="latest-stories">
+            <p class="pre-heading">Seneste sager</p>
+
+            <h2 class="heading">
+                Nyt på Digital Krimi 
+            </h2>
+
+            <div class="stories-grid">
+                <!-- Sekundær stor historie – billede til højre -->
+                <article
+                    class="story-card story-card--feature story-card--image-right"
+                >
+                    <a href="#" class="story-card__link">
+                        <div class="story-card__content">
+                            <p class="story-card__category badge badge--royal">
+                                Gode råd
+                            </p>
+
+                            <h3 class="heading">
+                                Hvem taler du egentlig med, når “banken” ringer?
+                            </h3>
+
+                            <p class="story-card__teaser">
+                                Svindlere præsenterer sig ofte som din bank eller en myndighed
+                                og skaber tidspres i telefonen. Læs, hvordan du kan genkende
+                                tricksene, og hvad du aldrig skal oplyse over telefonen.
+                            </p>
+
+                            <p class="story-card__meta">
+                                <time datetime="2025-11-18">18. november 2025 </time>
+                            </p>
+                        </div>
+
+                        <figure class="story-card__media">
+                            <img
+                                src="img/kvinde-telefon.jpg"
+                                alt="Billede af en kvinde der taler i telefon"
+                            >
+                        </figure>
+                    </a>
+                </article>
+
+                <!-- Mellemstor historie 1 -->
+                <article class="story-card story-card--medium">
+                    <a href="#" class="story-card__link">
+                        <figure class="story-card__media">
+                            <img
+                                src="img/udsalg.jpg"
+                                alt="Billede af butik med udsalg"
+                            >
+                        </figure>
+
+                        <div class="story-card__content">
+                            <p class="story-card__category badge badge--lime">
+                                Aktuelt svindeltrick
+                            </p>
+
+                            <h3 class="heading">
+                                Falske webshops lokker med udsalg på populære mærker
+                            </h3>
+
+                            <p class="story-card__teaser">
+                                Mange fup-butikker kopierer kendte brands og bruger
+                                aggressive rabatter. Vi gennemgår de typiske kendetegn
+                                og viser, hvordan du tjekker en side, før du betaler.
+                            </p>
+
+                            <p class="story-card__meta">
+                                <time datetime="2025-11-16">16. november 2025</time>
+                            </p>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Mellemstor historie 2 -->
+                <article class="story-card story-card--medium">
+                    <a href="#" class="story-card__link">
+                        <figure class="story-card__media">
+                            <img
+                                src="img/2-kvinder.jpg"
+                                alt="Billede af to kvinder der går bekymret på gaden"
+                            >
+                        </figure>
+
+                        <div class="story-card__content">
+                            <p class="story-card__category badge badge--magenta">
+                                Brugerhistorie
+                            </p>
+
+                            <h3 class="heading">
+                                Julie og Mathilde blev snydt af falsk udlejer. Sådan skete det
+                            </h3>
+
+                            <p class="story-card__teaser">
+                                Et depositum på MobilePay, en overbevisende annonce
+                                og et “uopsætteligt” møde. Læs deres historie, og se
+                                hvilke røde flag de først opdagede bagefter.
+                            </p>
+
+                            <p class="story-card__meta">
+                                <time datetime="2025-11-12">12. november 2025</time>
+                            </p>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Mindre historie 1 -->
+                <article class="story-card story-card--small">
+                    <a href="#" class="story-card__link">
+                        <div class="story-card__content">
+                            <p class="story-card__category badge badge--petroleum">
+                                Kort nyt
+                            </p>
+
+                            <h3 class="heading">
+                                Kommuner advarer om falske NemID- og MitID-opkald
+                            </h3>
+
+                            <p class="story-card__meta">
+                                <time datetime="2025-11-11">>11. november 2025</time>
+                            </p>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Mindre historie 2 -->
+                <article class="story-card story-card--small">
+                    <a href="#" class="story-card__link">
+                        <div class="story-card__content">
+                            <p class="story-card__category badge badge--petroleum">
+                                Kort nyt
+                            </p>
+
+                            <h3 class="heading">
+                                Ældre målrettes af falske “support-opkald” fra tekniker
+                            </h3>
+
+                            <p class="story-card__meta">
+                                <time datetime="2025-11-9">9. november 2025</time>
+                            </p>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Mindre historie 3 -->
+                <article class="story-card story-card--small">
+                    <a href="#" class="story-card__link">
+                        <div class="story-card__content">
+                            <p class="story-card__category badge badge--petroleum">
+                                Kort nyt
+                            </p>
+
+                            <h3 class="heading">
+                                Ny bølge af falske pakkemails op til julehandlen
+                            </h3>
+
+                            <p class="story-card__meta">
+                                <time datetime="2025-11-7">7. november 2025 </time>
+                            </p>
+                        </div>
+                    </a>
+                </article>
+            </div><!-- /.stories-grid -->
+        </section>
+
+        <!-- 3. Video-historier -->
+        <section class="video-stories">
+
+            <p class="pre-heading">Video</p>
+
+            <h2 class="heading">
+                Korte videoer
+            </h2>
+
+            <!-- Hint om scroll til brugere -->
+            <p class="video-scroll-hint">
+                TIP: Swipe eller scroll vandret for at se flere videoer.
+            </p>
+
+            <div class="video-grid">
+                <!-- Video 1: Sådan spotter du en deep fake -->
+                <article class="video-card">
+                    <a
+                        href="https://youtu.be/C60nVv7ILTY"
+                        class="story-card__link video-card__link"
+                    >
+                        <div class="video-card__media">
+                            <div class="video-card__embed">
+                                <!-- Iframe er skjult for skærmlæsere. Titel-link bruges som primær adgang -->
+                                <iframe
+                                    src="https://www.youtube-nocookie.com/embed/C60nVv7ILTY"
+                                    title="Sådan spotter du en deep fake (video på YouTube)"
+                                    loading="lazy"
+                                    allowfullscreen
+                                    referrerpolicy="strict-origin-when-cross-origin"
+                                    aria-hidden="true"
+                                    tabindex="-1"
+                                ></iframe>
+                            </div>
+                        </div>
+
+                        <div class="video-card__content">
+                            <p class="story-card__category badge badge--royal">
+                                Gode råd
+                            </p>
+                            <h3 class="heading">
+                                Sådan spotter du en deep fake
+                            </h3>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Video 2: Digital svindel stiger. Hør Aksels historie -->
+                <article class="video-card">
+                    <a
+                        href="https://youtu.be/Cfq22PocESE"
+                        class="story-card__link video-card__link"
+                    >
+                        <div class="video-card__media">
+                            <div class="video-card__embed">
+                                <iframe
+                                    src="https://www.youtube-nocookie.com/embed/Cfq22PocESE"
+                                    title="Digital svindel stiger. Hør Aksels historie (video på YouTube)"
+                                    loading="lazy"
+                                    allowfullscreen
+                                    referrerpolicy="strict-origin-when-cross-origin"
+                                    aria-hidden="true"
+                                    tabindex="-1"
+                                ></iframe>
+                            </div>
+                        </div>
+
+                        <div class="video-card__content">
+                            <p class="story-card__category badge badge--magenta">
+                                Brugerhistorie
+                            </p>
+                            <h3 class="heading">
+                                Digital svindel stiger. Hør Aksels historie
+                            </h3>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Video 3: Julehandel: Sådan spotter du en fup-butik -->
+                <article class="video-card">
+                    <a
+                        href="https://youtu.be/33TuoQSI98w"
+                        class="story-card__link video-card__link"
+                    >
+                        <div class="video-card__media">
+                            <div class="video-card__embed">
+                                <iframe
+                                    src="https://www.youtube-nocookie.com/embed/33TuoQSI98w"
+                                    title="Julehandel: Sådan spotter du en fup-butik (video på YouTube)"
+                                    loading="lazy"
+                                    allowfullscreen
+                                    referrerpolicy="strict-origin-when-cross-origin"
+                                    aria-hidden="true"
+                                    tabindex="-1"
+                                ></iframe>
+                            </div>
+                        </div>
+
+                        <div class="video-card__content">
+                            <p class="story-card__category badge badge--royal">
+                                Gode råd
+                            </p>
+                            <h3 class="heading">
+                                Julehandel: Sådan spotter du en fup-butik
+                            </h3>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Video 4: Sådan blev Julie og Mathilde snydt af falsk udlejer -->
+                <article class="video-card">
+                    <a
+                        href="https://youtu.be/BQ32Z8tQsZM"
+                        class="story-card__link video-card__link"
+                    >
+                        <div class="video-card__media">
+                            <div class="video-card__embed">
+                                <iframe
+                                    src="https://www.youtube-nocookie.com/embed/BQ32Z8tQsZM"
+                                    title="Sådan blev Julie og Mathilde snydt af falsk udlejer (video på YouTube)"
+                                    loading="lazy"
+                                    allowfullscreen
+                                    referrerpolicy="strict-origin-when-cross-origin"
+                                    aria-hidden="true"
+                                    tabindex="-1"
+                                ></iframe>
+                            </div>
+                        </div>
+
+                        <div class="video-card__content">
+                            <p class="story-card__category badge badge--magenta">
+                                Brugerhistorie
+                            </p>
+                            <h3 class="heading">
+                                Sådan blev Julie og Mathilde snydt af falsk udlejer
+                            </h3>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Video 5: Se, ældre mand blive svindlet. Stop op og undgå digital svindel -->
+                <article class="video-card">
+                    <a
+                        href="https://youtu.be/rj3nDy66lhA"
+                        class="story-card__link video-card__link"
+                    >
+                        <div class="video-card__media">
+                            <div class="video-card__embed">
+                                <iframe
+                                    src="https://www.youtube-nocookie.com/embed/rj3nDy66lhA"
+                                    title="Se, ældre mand blive svindlet: Stop op og undgå digital svindel (video på YouTube)"
+                                    loading="lazy"
+                                    allowfullscreen
+                                    referrerpolicy="strict-origin-when-cross-origin"
+                                    aria-hidden="true"
+                                    tabindex="-1"
+                                ></iframe>
+                            </div>
+                        </div>
+
+                        <div class="video-card__content">
+                            <p class="story-card__category badge badge--petroleum">
+                                Kort nyt
+                            </p>
+                            <h3 class="heading">
+                                Se, ældre mand blive svindlet: Stop op og undgå digital svindel
+                            </h3>
+                        </div>
+                    </a>
+                </article>
+            </div><!-- /.video-grid -->
+        </section>
+
+        <!-- 4. Guides -->
+        <section class="guide-section">
+            <p class="pre-heading">Gode råd</p>
+
+            <h2 class="heading">
+                Få hjælp til at beskytte dig
+            </h2>
+
+            <div class="guides-grid">
+                <!-- Guide 1 – CPR-nummer -->
+                <article class="guide-card">
+                    <a href="#" class="guide-card__link">
+                        <h3 class="heading">
+                            Er dit CPR-nummer faldet i de forkerte hænder?
+                        </h3>
+                        <p>
+                            Lær, hvad du skal gøre, hvis du mistænker identitetstyveri,
+                            og hvordan du begrænser skaden hurtigst muligt.
+                        </p>
+                    </a>
+                    <a href="#" class="btn-primary guide-card__button">
+                        Læs mere
+                    </a>
+                </article>
+
+                <!-- Guide 2 – webshops -->
+                <article class="guide-card">
+                    <a href="#" class="guide-card__link">
+                        <h3 class="heading">
+                            Sådan tjekker du om en webshop er ægte, før du handler
+                        </h3>
+                        <p>
+                            En tjekliste til julehandlen: domæne, kontaktoplysninger,
+                            betalingsmuligheder og anmeldelser.
+                        </p>
+                    </a>
+                    <a href="#" class="btn-primary guide-card__button">
+                        Læs mere
+                    </a>
+                </article>
+
+                <!-- Guide 3 – virksomhed -->
+                <article class="guide-card">
+                    <a href="#" class="guide-card__link">
+                        <h3 class="heading">
+                            Værktøj til bedre beskyttelse af virksomhedens data
+                        </h3>
+                        <p>
+                            Få overblik over de mest kritiske systemer og konkrete anbefalinger
+                            til små og mellemstore virksomheder.
+                        </p>
+                    </a>
+                    <a href="#" class="btn-primary guide-card__button">
+                        Læs mere
+                    </a>
+                </article>
+            </div><!-- /.guides-grid -->
+        </section>
+    </main>
+
+    <!-- ======================================================
+         Footer: branding, “det med småt”, sociale links
+    ======================================================= -->
+    <footer class="site-footer">
+        <div class="site-footer__inner">
+            <!-- Branding og kort beskrivelse -->
+            <section class="footer-brand" aria-label="Om Digital Krimi">
+                <img
+                    src="img/logo.png"
+                    alt="Digital Krimi – en del af SikkerDigital.dk"
+                    class="footer-brand__logo"
+                >
+
+                <p class="footer-brand__text">
+                    Vi hjælper dig med at forstå og undgå at blive udsat for digital svindel
+                    ved at udgive spændende og lærerige krimi-artikler fra virkelighedens verden.
+                </p>
+            </section>
+
+            <!-- “Det med småt”-links -->
+            <nav class="footer-nav" aria-label="Links til det med småt">
+                <ul class="footer-nav__list">
+                    <li class="footer-nav__item">
+                        <a href="#" class="footer-nav__link">Tilgængelighedserklæring</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a href="#" class="footer-nav__link">Cookies</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a href="#" class="footer-nav__link">Privatlivspolitik</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Sociale links -->
+            <section class="footer-social" aria-label="Digital Krimi på sociale medier">
+                <h2 class="pre-heading footer-social__heading">Følg Digital Krimi</h2>
+                <ul class="footer-social__list">
+                    <li class="footer-social__item">
+                        <a href="#" class="footer-social__link">
+                            <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                            <span class="visually-hidden">Digital Krimi på Facebook</span>
+                        </a>
+                    </li>
+                    <li class="footer-social__item">
+                        <a href="#" class="footer-social__link">
+                            <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+                            <span class="visually-hidden">Digital Krimi på LinkedIn</span>
+                        </a>
+                    </li>
+                    <li class="footer-social__item">
+                        <a href="#" class="footer-social__link">
+                            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                            <span class="visually-hidden">Digital Krimi på Instagram</span>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </footer>
+
+</body>
+</html>
+
+
