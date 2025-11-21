@@ -617,7 +617,7 @@ a.btn-primary:visited {
     box-shadow: 0 0 0 1px #EEEEEE;
 }
 
-/* Hele kortet som link */
+/* Hele card som link */
 .story-card__link {
     display: flex;
     flex-direction: column;
